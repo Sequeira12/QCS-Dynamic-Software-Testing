@@ -4,8 +4,9 @@ Composição do grupo:
 -Bruno Sequeira nº 2020235721
 -Rui Santos nº 2020225542 
 PL2
-Temos cerca de 2 códigos:
+Temos cerca de 3 códigos:
 
+Iremo-nos focar nos 2 primeiros, o ultimo fica em 'stand-by'.
 
 Este código em Java implementa um solver para o jogo Sudoku. Ele utiliza uma técnica de backtracking para tentar preencher o tabuleiro de Sudoku de forma válida, ou seja, respeitando todas as regras do jogo.
 
@@ -94,9 +95,6 @@ Este código implementa o algoritmo de Dijkstra para encontrar o caminho mais cu
 
 A função em estudo é "dijkstra"
 
-package Code;
-import java.util.*;
-
 class Vertex {
     public int id;
     public int distance;
@@ -154,10 +152,14 @@ public class Dijkstra {
         graph.addEdge(4, 0, 7);
 
         int sourceVertex = 0;
-        dijkstra(graph, sourceVertex);
+        int[][] distance =  dijkstra(graph, sourceVertex);
+        for(int i = 0; i < distance.length; i++){
+            System.out.printf("%d - %d\n",distance[i][0],distance[i][1]);
+        }
     }
 
-    public static void dijkstra(Graph graph, int source) {
+    public static int[][] dijkstra(Graph graph, int source) {
+        
         int numVertices = graph.adjacencyList.size();
         boolean[] visited = new boolean[numVertices];
         PriorityQueue<Vertex> priorityQueue = new PriorityQueue<>(numVertices, Comparator.comparingInt(v -> v.distance));
@@ -187,8 +189,15 @@ public class Dijkstra {
                 }
             }
         }
-
-        printSolution(vertices);
+        int[][] distance = new int[vertices.length][2];
+        int count = 0;
+        for (Vertex vertex : vertices) {
+            distance[count][0] = vertex.id;
+            distance[count][1] = vertex.distance;
+            count++;
+           // System.out.println(vertex.id + " \t\t " + vertex.distance);
+        }
+        return distance;
     }
 
     public static void printSolution(Vertex[] vertices) {
@@ -200,3 +209,57 @@ public class Dijkstra {
 }
 #############################################################################################################
 
+
+FUNÇÃO STAND-BY
+Esta código encontra os tripletes de um array. 
+
+
+
+
+public class CodeJava  
+{ 
+  
+    // function to print triplets with 0 sum 
+    public static int[][] findTriplets(int arr[], int n)  
+    { 
+        boolean found = false; 
+        int[][] result = new int[n*3][3];
+        int count = 0;
+        for (int i = 0; i < n - 1; i++)  
+        { 
+            // Find all pairs with sum equals to 
+            // "-arr[i]" 
+            HashSet<Integer> s = new HashSet<Integer>(); 
+            for (int j = i + 1; j < n; j++)  
+            { 
+                int x = -(arr[i] + arr[j]); 
+                if (s.contains(x))  
+                { 
+                    result[count][0] = x;
+                    result[count][1] = arr[i];
+                    result[count][2] = arr[j];
+                    count++;
+                    found = true; 
+                }  
+                else 
+                { 
+                    s.add(arr[j]); 
+                } 
+            } 
+        } 
+  
+        
+        return result;
+    } 
+  
+    // Driver code 
+    public static void main(String[] args)  
+    { 
+        int arr[] = {0, -1, 2, -3, 1}; 
+        int n = arr.length; 
+        int[][] result = findTriplets(arr, n); 
+        for(int i = 0; i < result.length;i++){
+            System.out.printf("%d %d %d\n",result[i][0],result[i][1],result[i][2]);
+        }
+    } 
+} 
