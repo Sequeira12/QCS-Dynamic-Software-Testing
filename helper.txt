@@ -4,68 +4,111 @@ Predicates: 7
 
 Cyclomatic Complexity: 7 + 1 = 8
 
-1,2,3,4,6,7,8,3,5,9,10,13,14,15,16,10,5,11,12,17,18,19
+FINAL:
 
+Caso de teste:
 
-PATH: 1,2,3,5,11,12 (GOOD) (Empty Graph)
+PATH: 1,2,3,5,11,12 (Impossible)
 
-PATH: 1,2,3,5,9,10,5,11,12 (Impossible)
-
-PATH: 1,2,3,5,9,10,13,10,5,11,12 (Impossible)
-
-PATH: 1,2,3,5,9,10,13,14,15,10,5,11,12
-
-PATH: 1,2,3,5,9,10,13,14,15,16,10,5,11,12
-
-PATH: 1,2,3,4,6,8,3,5,11,12
-
-PATH: 1,2,3,4,6,7,8,3,5,11,12
+PATH: 1,2,3,4,6,8,3,5,11,12 (Impossible)
 
 
 
+PATH: 1,2,3,4,6,8,3,5,9,10,5,11,12 (numVertices = 1, source = 1)
 
-#########################################
+INPUT:
 
-PATH: 1,2,3,4,6,8,3,5,11,12
-
-PATH: 1,2,3,4,6,7,8,3,5,11,12
-
-PATH: 1,2,3,4,6,7,8,3,5,9,10,5,11,12
-
-PATH: 1,2,3,4,6,7,8,3,5,9,10,13,10,5,11,12
-
-PATH: 1,2,3,4,6,7,8,3,5,9,10,13,14,15,10,5,11,12
-
-PATH: 1,2,3,4,6,7,8,3,5,9,10,13,14,15,16,10,5,11,12
+        int numVertices = 1;
+        Graph graph = new Graph(numVertices);
+        int[][] distance = dijkstra(graph, 1);
+        
+OUTPUT:
+        0 - 2147483647
 
 
 
 
+PATH: 1,2,3,4,6,7,8,3,5,9,10,5,11,12 (numVertices = 1, source = 0)
+
+INPUT: 
+        int numVertices = 1;
+        Graph graph = new Graph(numVertices);
+        int[][] distance = dijkstra(graph, 0);
+
+OUTPUT:
+        0 - 0
 
 
 
+PATH: 1,2,3,4,6,7,8,3,5,9,10,13,10,5,11,12 (adicionar uma conexão que nao tenha ligação com a source)
 
-PATH1: 1,2,3,5,11,12,18,19 (GOOD)
+INPUT:
+        int numVertices = 5;
+        Graph graph = new Graph(numVertices);
+        graph.addEdge(1,2,1);
+        graph.addEdge(2,4,5);
+        graph.addEdge(2,3,10);
+        graph.addEdge(3,4,3);
+        int[][] distance = dijkstra(graph, 0);
 
-PATH2: 1,2,3,5,11,12,17,12,18,19 (unfeasable)
+OUTPUT:
+        0 - 0
+        1 - 2147483647
+        2 - 2147483647
+        3 - 2147483647
+        4 - 2147483647  
 
-PATH3: 1,2,3,4,6,8,3,5,9,10,13,14,15,16,10,5,11,12,17,18,19 
 
-PATH4: 1,2,3,5,9,10,9,11,12,18,19
+PATH: 1,2,3,4,6,7,8,3,5,9,10,13,14,15,10,5,11,12 (Integer.MAX_VALUE)
 
-PATH: 1,2,3,5,9,10,13,10,5,11,12,18,19
 
-PATH: 1,2,3,5,9,10,13,14,15,10,5,11,12,18,19
+INPUT:
+        int numVertices = 2;
+        Graph graph = new Graph(numVertices);
+        graph.addEdge(0, 1, Integer.MAX_VALUE); 
+        int[][] distance = dijkstra(graph, 0);
+OUTPUT:
+        0 - 0
+        1 - 2147483647
 
-PATH: 1,2,3,5,9,10,13,14,15,16,10,5,11,12,18,19
 
-PATH: 1,2,3,5,9,10,13,14,15,16,10,5,11,12,18,19
+PATH: 1,2,3,4,6,7,8,3,5,9,10,13,14,15,16,10,5,11,12  (CAMINHO NORMAL)
 
-PATH: 1,2,3,5, 9,10,13,14,15,10,5,11,12,18,19
 
-PATH: 1,2,3,5,9,10,13,14,15,10,5,11,12,18,19
+INPUT:
+        int numVertices = 5;
+        Graph graph = new Graph(numVertices);
+        graph.addEdge(0,2,1);
+        graph.addEdge(0,1,10);
+        graph.addEdge(2,4,5);
+        graph.addEdge(2,3,10);
+        graph.addEdge(3,4,3);
+        int[][] distance = dijkstra(graph, 0);
 
-PATH4: 1,2,3,4,6,7,8,3,5,9,10,13,14,15,16,10,5,11,12,17,18,19 (GOOD)
+
+OUTPUT:
+        0 - 0
+        1 - 10
+        2 - 1
+        3 - 11
+        4 - 6
+
+1 x 
+2 x 
+3 x
+4 x 
+5 x
+6 x 
+7 x
+8 x 
+9 x
+10 x
+11 x 
+12 x
+13 x
+14 x
+15 x
+16 x
 
 
 
