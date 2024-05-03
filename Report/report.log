@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.4.12)  30 APR 2024 15:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.4.12)  2 MAY 2024 15:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -320,47 +320,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--139
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
-[]\OT1/cmr/bx/n/10 Output
+Underfull \hbox (badness 10000) in paragraph at lines 143--146
+
  []
 
 [4]
-<Images/ControlFlowSudoku.png, id=27, 1071.00125pt x 904.37875pt>
-File: Images/ControlFlowSudoku.png Graphic file (type png)
-<use Images/ControlFlowSudoku.png>
-Package pdftex.def Info: Images/ControlFlowSudoku.png  used on input line 208.
-(pdftex.def)             Requested size: 430.00462pt x 363.11127pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--211
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--216
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
-
- []
-
-[6 <./Images/ControlFlowSudoku.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 []\OT1/cmr/bx/n/10 Output
  []
 
+[5]
+<Images/ControlFlowSudoku.png, id=30, 1071.00125pt x 904.37875pt>
+File: Images/ControlFlowSudoku.png Graphic file (type png)
+<use Images/ControlFlowSudoku.png>
+Package pdftex.def Info: Images/ControlFlowSudoku.png  used on input line 212.
+(pdftex.def)             Requested size: 430.00462pt x 363.11127pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
+Underfull \hbox (badness 10000) in paragraph at lines 209--215
 
  []
 
-[7] [8] (report.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
+[6
+
+ <./Images/ControlFlowSudoku.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
+[]\OT1/cmr/bx/n/10 Output
+ []
+
+[7]
+Overfull \vbox (30.21228pt too high) has occurred while \output is active []
+
+ [8]
+Underfull \hbox (badness 10000) in paragraph at lines 370--374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
+
+ []
+
+[9] (report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -371,17 +396,17 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5171 strings out of 476358
- 101385 string characters out of 5790756
- 1940493 words of memory out of 5000000
- 27281 multiletter control sequences out of 15000+600000
+ 5173 strings out of 476358
+ 101401 string characters out of 5790756
+ 1943493 words of memory out of 5000000
+ 27283 multiletter control sequences out of 15000+600000
  560874 words of font info for 45 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 65i,11n,79p,618b,404s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 65i,12n,79p,618b,415s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (9 pages, 251957 bytes).
+Output written on report.pdf (10 pages, 256658 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 67 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
