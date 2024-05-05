@@ -49,6 +49,22 @@ INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex
 INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/listings.cfg
 INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/listings.cfg
 INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/listings.cfg
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/colortbl/colortbl.sty
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/colortbl/colortbl.sty
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/array.sty
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/array.sty
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/color.sty
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/color.sty
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx
 INPUT ./report.aux
 INPUT ./report.aux
 INPUT report.aux
@@ -61,6 +77,10 @@ INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex
 INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ninecolors/ninecolors.sty
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ninecolors/ninecolors.sty
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3packages/xparse/xparse.sty
+INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3packages/xparse/xparse.sty
 INPUT ./Images/dei_thumb.png
 INPUT ./Images/dei_thumb.png
 INPUT ./Images/dei_thumb.png
@@ -93,6 +113,20 @@ INPUT ./Images/ControlFlowSudoku.png
 INPUT ./Images/ControlFlowSudoku.png
 INPUT ./Images/ControlFlowSudoku.png
 INPUT ./Images/ControlFlowSudoku.png
+INPUT ./Images/DataFlowDijkstra.png
+INPUT ./Images/DataFlowDijkstra.png
+INPUT ./Images/DataFlowDijkstra.png
+INPUT ./Images/DataFlowDijkstra.png
+INPUT ./Images/DataFlowDijkstra.png
+INPUT ./Images/DataFlowDijkstra.png
+INPUT ./Images/DataFlowDijkstra.png
+INPUT ./Images/DataFlowSudoku.drawio.png
+INPUT ./Images/DataFlowSudoku.drawio.png
+INPUT ./Images/DataFlowSudoku.drawio.png
+INPUT ./Images/DataFlowSudoku.drawio.png
+INPUT ./Images/DataFlowSudoku.drawio.png
+INPUT ./Images/DataFlowSudoku.drawio.png
+INPUT ./Images/DataFlowSudoku.drawio.png
 INPUT report.aux
 INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk
 INPUT /Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk

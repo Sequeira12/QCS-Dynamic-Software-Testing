@@ -5,8 +5,8 @@
 \usepackage{float}
 \usepackage{tabularray}
 \usepackage{listings}
-
-
+\usepackage{colortbl}
+\usepackage[table]{xcolor}
 \begin{document}
 
 \begin{titlepage}
@@ -80,9 +80,14 @@ Para o software encontrado, iremo-nos focar na função \textbf{Solve} e \textbf
 \subsection{Testes White Box}
 Nesta secção estão presentes os testes de White Box para as funções \textbf{Dijkstra()}, do projeto \textit{Algoritmo de Dijkstra}, e  \textbf{Solve()} do projeto \textit{Sudoku}.
 
+As técnicas de White Box analisam as estruturas internas, as estruturas de dados usadas, o design interno, a estrutura do código e o funcionamento do software, em vez de apenas a funcionalidade como no teste de caixa preta.
+
+
 Esta abordagem faz a testagem por partes, ou seja, aos detalhes na implementação do código em análise e foca-se nos testes de \textit{Control-Flow}, onde foram analisados todos os caminhos independentes e implementados casos de testes para cada um.
 
 \subsubsection{Control Flow}
+\quad O fluxo de controlo é fundamental no contexto do teste de software. Este se refere à maneira como o controlo é direcionado ou manipulado dentro de um programa ou sistema durante a execução dos testes. O objetivo principal do fluxo de controlo nos testes de software é garantir que todas as partes do código sejam testadas de maneira adequada e eficiente, identificando falhas e garantindo a qualidade do software.
+
 
 Para realização deste método, iremos apresentar passo a passo, a implementação deste. Projetando o grafo de Control Flow de cada função, determinamos a complexidade ciclomática, analisamos os caminho independentes possíveis e verificamos quais deles são possíveis de serem executados. Com isso, iremos determinar casos de teste para cada um dos caminhos encontrados.
 \clearpage
@@ -180,7 +185,7 @@ Para realização deste método, iremos apresentar passo a passo, a implementaç
     int[][] distance = dijkstra(graph, 0); & 0 - 0\newline
     1 - 2147483647 \\
     \hline
-    \textbf{P6} & int numVertices = 5;\newline
+    \textbf{P7} & int numVertices = 5;\newline
     Graph graph = new Graph(numVertices);\newline
     graph.addEdge(0,2,1);\newline
     graph.addEdge(0,1,10);\newline
@@ -381,8 +386,166 @@ O teste de fluxo de dados é usado para encontrar os seguintes problemas:\\
 O processo é demorado.\\
 Existem vários tipos de teste de fluxo de dados, tais como All def, All use, All-Du-Paths, sendo que este último é o tipo de teste que iremo-nos focar mais, pois esta técnica apesar de ser mais complexa, é a melhor pois analisa todos os caminhos possíveis de uma definição de variáveis.
 
+\begin{itemize}
+    \item      \textbf{Função Dijkstra()}
+    
+       
+    \begin{enumerate}
+        
+        \item \textbf{Grafo de Data Flow}
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/DataFlowDijkstra.png}
+    \caption{Data Flow - função Dijkstra.} 
+    \label{fig:DataFlow-Dijkstra}
+
+    \end{figure}
+    
+    \item \textbf{Caminhos ADUP}\\
+    Para cada variável, iremos identificar caminhos no gráfico de fluxo de dados que satisfaçam os critérios de seleção (todos os caminhos du
+para cada variável).
+    Nesta função, as variáveis são as seguintes:\\
+    \textit{graph}, \textit{visited}, \textit{numVertices}, \textit{priorityQueue}, \textit{newDistance}, \textit{distance}, \textit{source}, \textit{currentVertex}, \textit{edges} e \textit{vertices}.
+    \begin{itemize}
+        \item \textbf{graph}
+        \begin{itemize}
+            \item ADUP1 - 1, 2
+            \item ADUP2 - 1,2,3,8,9
+            \item ADUP3 - 1, 2, 3, 4, 5, 7, 3, 8, 9
+            \item Caminho completo: 1, 2, 3, 4, 5, 6, 7, 3, 8, 9
+        \end{itemize}
+        \item \textbf{visited}
+        \begin{itemize}
+            \item ADUP1 - 2,3,8,9
+            \item ADUP2 - 2,3,4,5,7,3,8,9
+            \item ADUP3 - 2,3,4,5,6,7,3,8,9
+            \item ADUP4 - 9,10,11
+            \item ADUP5 - 9,10,11,12,13
+            \item ADUP6 - 9,10,11,12,13,14
+            \item Caminho completo: 2,3,4,5,6,7,3,8,9,10,11,12,13,14
+        \end{itemize}
+        \item \textbf{numVertices}
+        \begin{itemize}
+            \item ADUP1 - 2,3
+            \item Caminho completo: 2,3
+        \end{itemize}
+        \item \textbf{priorityQueue}
+        \begin{itemize}
+            \item ADUP1 - 2,3,4,5,7
+            \item ADUP2 - 2,3,4,5,6,7
+            \item ADUP3 - 7,3,8,9
+            \item Caminho completo: 2,3,4,5,6,7,3,8,9
+        \end{itemize}
+        \item \textbf{newDistance}
+        \begin{itemize}
+            \item ADUP1 - 12,13
+            \item Caminho completo: 12,13
+        \end{itemize}
+        \item \textbf{distance}
+        \begin{itemize}
+            \item ADUP1 - 15,16
+            \item Caminho completo: 15,16
+        \end{itemize}
+        \item \textbf{source}
+        \begin{itemize}
+            \item ADUP1 - 1,2,3,4,5
+            \item Caminho completo: 1,2,3,4,5
+        \end{itemize}
+        \item \textbf{currentVertex}
+        \begin{itemize}
+            \item ADUP1 - 9,10,11,12
+            \item Caminho completo: 9,10,11,12
+        \end{itemize}
+        \item \textbf{edges}
+        \begin{itemize}
+            \item ADUP1 - 9,10
+            \item Caminho completo: 9,10
+        \end{itemize}
+        \item \textbf{vertices}
+        \begin{itemize}
+            \item ADUP1 - 2,3
+            \item ADUP2 - 4,5,6
+            \item Caminho completo: 2,3,4,5,6
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Casos de teste - Data Flow}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|p{4cm}|c|} % Ajusta a largura da coluna "Input" para 5cm
+        \hline
+        \textbf{variável} & \textbf{Caso de teste} & \textbf{Caminho} & \textbf{Graph} & \textbf{Source} \\ \hline
+        graph & CT01 &  &  &  \\ \hline
+        visited & CT02 &  &    &  \\ \hline
+        numVertices & CT03 &  &  &  \\ \hline
+        priorityQueue & CT04 &   & &  \\ \hline
+        newDistance & CT05 &  &  &  \\ \hline
+        distance & CT06 &    &  &  \\ \hline
+        source & CT07 &  &    &  \\ \hline
+        currentVertex & CT08  & &  &  \\ \hline
+        edges & CT09 &  &   & \\ \hline
+        vertices & CT10 &  &  &  \\ 
+
+        \hline
+    \end{tabular}
+    \caption{Casos de teste para os caminhos ADUP do Sudoku.}
+    \label{tab:tabela_exemplo}
+\end{table}
+\end{enumerate}
+    \item\textbf{Função Solve()}
+    
+       
+    \begin{enumerate}
+        
+        \item \textbf{Grafo de Data Flow}
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/DataFlowSudoku.drawio.png}
+    \caption{Data Flow - função Solve.} 
+    \label{fig:DataFlow-Solve}
+
+    \end{figure}
+    \item \textbf{Caminhos ADUP}\\
+    
+    Para cada variável, iremos identificar caminhos no gráfico de fluxo de dados que satisfaçam os critérios de seleção (todos os caminhos du
+para cada variável).
+    Nesta função, a variáveis é a seguinte:\\
+    \textit{board}.
+    \begin{itemize}
+        \item \textbf{board}
+        \begin{itemize}
+            \item ADUP1 - 1,2,3,5,7
+            \item ADUP2 - 1,2,3,5,7,9,10,12
+            \item ADUP3 - 12,13
+            \item Caminho completo: 1,2,3,5,7,9,10,12,13
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Casos de teste - Data Flow}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|p{4cm}|c|} % Ajusta a largura da coluna "Input" para 5cm
+        \hline
+        \textbf{variável} & \textbf{Caso de teste} & \textbf{Caminho} & \textbf{Graph} & \textbf{Source} \\ \hline
+        board & CT01 &  &  &   \\ 
+        \hline
+    \end{tabular}
+    \caption{Casos de teste para os caminhos ADUP do Sudoku.}
+    \label{tab:tabela_exemplo}
+\end{table}
+    
+    \end{enumerate}
+
+    
+\end{itemize}
+
+
+
 \section{Critérios de Pass/Fail}
 
+\quad Testes unitários são uma prática essencial no desenvolvimento de software que tem como objetivo garantir a qualidade e a robustez do código. Estes consistem na verificação individual e isolada de unidades de código tais como funções, garantindo que cada unidade funcione conforme o esperado.
+
+Portanto, para este tipo de teste, só é considerado bem sucedido se o output corresponder ao output esperado.
+
+Se todos os testes forem sucedidos com sucesso, podemos dizer que o software funciona conforme planejado.
 \section{Entregável}
 
 \section{Necessidades do ambiente}
@@ -397,6 +560,206 @@ Sendo que ao longo do desenvolvimento, fomos nos ajudando um ao outro, realizand
 
 \section{Relatório de Conclusão dos Testes}
 
+\subsection{Control Flow Testing}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|p{4cm}|p{4cm}|c|c|} % Ajusta a largura da coluna "Input" para 5cm
+    \hline
+    \textbf{Teste} & \textbf{Output Esperado} & \textbf{Output} & \textbf{Comentário} & \textbf{Passou/Falhou}\\
+    \hline
+
+    \textbf{P3}  & 0 - 2147483647  & 0 - 2147483647 & Ok & \cellcolor{green}  \\
+    \hline
+    \textbf{P4} & 0 - 0 & 0 - 0 & Ok & \cellcolor{green}  \\
+    \hline
+    \textbf{P5}  & 0 - 0\newline
+    1 - 2147483647\newline
+    2 - 2147483647\newline
+    3 - 2147483647\newline
+    4 - 2147483647    & 0 - 0\newline
+    1 - 2147483647\newline
+    2 - 2147483647\newline
+    3 - 2147483647\newline
+    4 - 2147483647    & Ok & \cellcolor{green}  \\
+    \hline
+    \textbf{P6}   & 0 - 0\newline
+    1 - 2147483647  & 0 - 0\newline
+    1 - 2147483647   & Ok & \cellcolor{green}  \\
+    \hline
+    \textbf{P7}  & 0 - 0\newline
+    1 - 10\newline
+    2 - 1\newline
+    3 - 11\newline
+    4 - 6   & 0 - 0\newline
+    1 - 10\newline
+    2 - 1\newline
+    3 - 11\newline
+    4 - 6  & Ok & \cellcolor{green}  \\
+    \hline
+
+\end{tabular}
+\caption{Resultados para os casos de teste da função de Dijkstra.}
+\label{tab:tabela_exemplo}
+\end{table}
+De acordo com a seção 6, o software atende aos critérios. (100\% sucesso).
+
+
+
+
+
+
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{|c|p{4cm}|p{4cm}|c|c|} % Ajusta a largura da coluna "Input" para 5cm
+    \hline
+    \textbf{Teste} & \textbf{Output Esperado} & \textbf{Output} & \textbf{Comentário} & \textbf{Passou/Falhou}\\
+    \hline
+    \textbf{P2} &   
+    5 3 4 6 7 8 9 1 2 \newline
+    6 7 2 1 9 5 3 4 8 \newline
+    1 9 8 3 4 2 5 6 7 \newline
+    8 5 9 7 6 1 4 2 3 \newline
+    4 2 6 8 5 3 7 9 1 \newline
+    7 1 3 9 2 4 8 5 6 \newline
+    9 6 1 5 3 7 2 8 4 \newline
+    2 8 7 4 1 9 6 3 5 \newline
+    3 4 5 2 8 6 1 7 9 & 
+5 3 4 6 7 8 9 1 2 \newline
+6 7 2 1 9 5 3 4 8 \newline
+1 9 8 3 4 2 5 6 7 \newline  
+8 5 9 7 6 1 4 2 3 \newline
+4 2 6 8 5 3 7 9 1 \newline
+7 1 3 9 2 4 8 5 6 \newline
+9 6 1 5 3 7 2 8 4 \newline
+2 8 7 4 1 9 6 3 5 \newline
+3 4 5 2 8 6 1 7 9   & Ok & \cellcolor{green}  \\
+\hline
+\textbf{P3} & 
+4 5 6 7 8 9 1 2 3\newline
+7 8 9 1 2 3 4 5 6\newline
+2 1 4 3 6 5 8 9 7\newline
+3 6 5 8 9 7 2 1 4 \newline
+8 9 7 2 1 4 3 6 5\newline
+5 3 1 6 4 2 9 7 8\newline
+6 4 2 9 7 8 5 3 1\newline
+9 7 8 5 3 1 6 4 2 
+ & 1 2 3 4 5 6 7 8 9\newline
+4 5 6 7 8 9 1 2 3\newline
+7 8 9 1 2 3 4 5 6\newline
+2 1 4 3 6 5 8 9 7\newline
+3 6 5 8 9 7 2 1 4 \newline
+8 9 7 2 1 4 3 6 5\newline
+5 3 1 6 4 2 9 7 8\newline
+6 4 2 9 7 8 5 3 1\newline
+9 7 8 5 3 1 6 4 2 & Ok & \cellcolor{green}  \\
+\hline
+\textbf{P4} &  
+. 3 4 5 7 8 9 1 2 \newline
+6 7 2 1 9 5 3 4 8 \newline
+1 9 8 3 4 2 5 6 7 \newline
+8 5 9 7 6 1 4 2 3 \newline
+4 2 6 8 5 3 7 9 1 \newline
+7 1 3 9 2 4 8 5 6 \newline
+9 6 1 5 3 7 2 8 4 \newline
+2 8 7 4 1 9 6 3 5 \newline
+3 4 5 2 8 6 1 7 9   
+ & 
+    . 3 4 5 7 8 9 1 2 \newline
+    6 7 2 1 9 5 3 4 8 \newline
+    1 9 8 3 4 2 5 6 7 \newline
+    8 5 9 7 6 1 4 2 3 \newline
+    4 2 6 8 5 3 7 9 1 \newline
+    7 1 3 9 2 4 8 5 6 \newline
+    9 6 1 5 3 7 2 8 4 \newline
+    2 8 7 4 1 9 6 3 5 \newline
+    3 4 5 2 8 6 1 7 9   & Ok & \cellcolor{green}  \\
+\hline
+
+\textbf{P5} &  . . 4 6 7 8 9 1 2 \newline
+. 7 2 1 9 5 3 4 8 \newline
+1 9 8 3 4 . 5 6 7 \newline
+8 5 . 7 6 1 4 2 3 \newline
+2 2 6 8 5 3 . . 1 \newline
+7 1 3 9 2 4 8 5 6 \newline
+9 . 1 . 3 . 2 8 4 \newline
+. 8 7 4 1 9 6 3 5 \newline
+3 4 5 2 . 6 1 7 9 
+ & . . 4 6 7 8 9 1 2 \newline
+. 7 2 1 9 5 3 4 8 \newline
+1 9 8 3 4 . 5 6 7 \newline
+8 5 . 7 6 1 4 2 3 \newline
+2 2 6 8 5 3 . . 1 \newline
+7 1 3 9 2 4 8 5 6 \newline
+9 . 1 . 3 . 2 8 4 \newline
+. 8 7 4 1 9 6 3 5 \newline
+3 4 5 2 . 6 1 7 9 & Ok & \cellcolor{green}  \\
+\hline
+\textbf{P6} & 
+5 3 4 6 7 8 9 1 2 \newline
+6 7 2 1 9 5 3 4 8\newline
+1 9 8 3 4 2 5 6 7\newline
+8 5 9 7 6 1 4 2 3\newline
+4 2 6 8 5 3 7 9 1\newline
+7 1 3 9 2 4 8 5 6\newline
+9 6 1 5 3 7 2 8 4\newline
+2 8 7 4 1 9 6 3 5\newline
+3 4 5 2 8 6 1 7 9 &
+    5 3 4 6 7 8 9 1 2 \newline
+6 7 2 1 9 5 3 4 8\newline
+1 9 8 3 4 2 5 6 7\newline
+8 5 9 7 6 1 4 2 3\newline
+4 2 6 8 5 3 7 9 1\newline
+7 1 3 9 2 4 8 5 6\newline
+9 6 1 5 3 7 2 8 4\newline
+2 8 7 4 1 9 6 3 5\newline
+3 4 5 2 8 6 1 7 9 & Ok & \cellcolor{green}  \\
+\hline
+\end{tabular}
+\caption{Resultados para os casos de teste da função de Dijkstra.}
+\label{tab:tabela_exemplo}
+\end{table}
+De acordo com a seção 6, o software atende aos critérios. (100\%sucesso).
+
+\subsection{Coverage}
+
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{|c|p{4cm}|p{4cm}|c|c|} % Ajusta a largura da coluna "Input" para 5cm
+    \hline
+    \textbf{Teste} & \textbf{Classe} & \textbf{Métodos} & \textbf{Linhas} & \textbf{Branches}\\ \hline
+    \textbf{P3} &  & & & \\ \hline
+    \textbf{P4} &  & & & \\ \hline
+    \textbf{P5} &  & & & \\ \hline
+    \textbf{P6} &  & & & \\ \hline
+    \textbf{P7} &  & & & \\ \hline
+    
+
+\end{tabular}
+\caption{Resultados da cobertura para os casos de teste da função de Dijkstra.}
+\label{tab:tabela_exemplo}
+\end{table}
+ 
+
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{|c|p{4cm}|p{4cm}|c|c|} % Ajusta a largura da coluna "Input" para 5cm
+    \hline
+    \textbf{Teste} & \textbf{Classe} & \textbf{Métodos} & \textbf{Linhas} & \textbf{Branches}\\ \hline
+    \textbf{P2} &  & & & \\ \hline
+    \textbf{P3} &  & & & \\ \hline
+    \textbf{P4} &  & & & \\ \hline
+    \textbf{P5} &  & & & \\ \hline
+    \textbf{P6} &  & & & \\ \hline
+    
+    
+
+\end{tabular}
+\caption{Resultados da cobertura para os casos de teste da função de Solve.}
+\label{tab:tabela_exemplo}
+\end{table}
 
 
 \end{document}
