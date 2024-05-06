@@ -405,13 +405,14 @@ Existem vários tipos de teste de fluxo de dados, tais como All def, All use, Al
     Para cada variável, iremos identificar caminhos no gráfico de fluxo de dados que satisfaçam os critérios de seleção (todos os caminhos du
 para cada variável).
     Nesta função, as variáveis são as seguintes:\\
-    \textit{graph}, \textit{visited}, \textit{numVertices}, \textit{priorityQueue}, \textit{newDistance}, \textit{distance}, \textit{source}, \textit{currentVertex}, \textit{edges} e \textit{vertices}.
+    \textit{graph}, \textit{visited}, \textit{numVertices}, \textit{priorityQueue}, \textit{newDistance}, \textit{distance}, \textit{source}, \textit{currentVertex}, \textit{edges}, \textit{vertices} e \textit{i}.
     \begin{itemize}
         \item \textbf{graph}
         \begin{itemize}
             \item ADUP1 - 1, 2
             \item ADUP2 - 1,2,3,8,9
             \item ADUP3 - 1, 2, 3, 4, 5, 7, 3, 8, 9
+            \item ADUP4 - 1, 2, 3, 4, 5, 6, 7, 3, 8, 9
             \item Caminho completo: 1, 2, 3, 4, 5, 6, 7, 3, 8, 9
         \end{itemize}
         \item \textbf{visited}
@@ -419,26 +420,31 @@ para cada variável).
             \item ADUP1 - 2,3,8,9
             \item ADUP2 - 2,3,4,5,7,3,8,9
             \item ADUP3 - 2,3,4,5,6,7,3,8,9
-            \item ADUP4 - 9,10,11
-            \item ADUP5 - 9,10,11,12,13
-            \item ADUP6 - 9,10,11,12,13,14
+            \item ADUP4 - 9,10,11,10
+            \item ADUP5 - 9,10,11,12
+    
             \item Caminho completo: 2,3,4,5,6,7,3,8,9,10,11,12,13,14
         \end{itemize}
         \item \textbf{numVertices}
         \begin{itemize}
-            \item ADUP1 - 2,3
+            \item ADUP1 - 2,3,4
+            \item ADUP2 - 2,3,8
             \item Caminho completo: 2,3
         \end{itemize}
         \item \textbf{priorityQueue}
         \begin{itemize}
             \item ADUP1 - 2,3,4,5,7
             \item ADUP2 - 2,3,4,5,6,7
-            \item ADUP3 - 7,3,8,9
+            \item ADUP3 - 7,3,8,15
+            \item ADUP4 - 7,3,8,9
+            \item ADUP4 - 9,10,11,12,13,14
             \item Caminho completo: 2,3,4,5,6,7,3,8,9
         \end{itemize}
+        NOTA: priorityQueue.poll() é uma definição pois remove o primeiro elemento da fila.
         \item \textbf{newDistance}
         \begin{itemize}
-            \item ADUP1 - 12,13
+            \item ADUP1 - 12,13,14
+            \item ADUP2 - 12,13,10
             \item Caminho completo: 12,13
         \end{itemize}
         \item \textbf{distance}
@@ -448,7 +454,8 @@ para cada variável).
         \end{itemize}
         \item \textbf{source}
         \begin{itemize}
-            \item ADUP1 - 1,2,3,4,5
+            \item ADUP1 - 1,2,3,4,5,7
+            \item ADUP2 - 1,2,3,4,5,6
             \item Caminho completo: 1,2,3,4,5
         \end{itemize}
         \item \textbf{currentVertex}
@@ -456,17 +463,48 @@ para cada variável).
             \item ADUP1 - 9,10,11,12
             \item Caminho completo: 9,10,11,12
         \end{itemize}
-        \item \textbf{edges}
+        \item \textbf{edge}
         \begin{itemize}
-            \item ADUP1 - 9,10
+            \item ADUP1 - 9,10,8
+            \item ADUP2 - 9,10,11
+            \item Caminho completo:
+        \end{itemize}
+        \item \textbf{edge}
+        \begin{itemize}
+            \item ADUP1 - 9,10,11
+            \item ADUP2 - 9,10,8
+            \item ADUP3 - 9,10,11,12
+            \item ADUP4 - 9,10,11,10
+            \item ADUP5 - 9,10,11,12,13,14
+            \item ADUP6 - 9,10,11,12,13,10
             \item Caminho completo: 9,10
         \end{itemize}
         \item \textbf{vertices}
         \begin{itemize}
-            \item ADUP1 - 2,3
+            \item ADUP1 - 2,3,4
             \item ADUP2 - 4,5,6
-            \item Caminho completo: 2,3,4,5,6
+            \item ADUP3 - 4,5,7
+            \item ADUP4 - 6,7
+            \item ADUP5 - 4,5,7,3,8,15
+            \item ADUP6 - 4,5,7,3,8,9,10,11,12,13,10
+            \item ADUP7 - 4,5,7,3,8,9,10,11,12,13,14
+            \item ADUP8 - 6,7,3,8,15
+            \item ADUP9 - 6,7,3,8,9,10,11,12,13,10
+            \item ADUP10 - 6,7,3,8,9,10,11,12,13,14
+            \item Caminho completo: 
         \end{itemize}
+        \item \textbf{i}
+        \begin{itemize}
+            \item ADUP1 - 2,3
+            \item ADUP2 - 2,3,4
+            \item ADUP3 - 2,3,4,5,7
+            \item ADUP4 - 2,3,4,5,6,7
+            \item ADUP5 - 7,3
+            \item ADUP6 - 7,3,4,5
+            \item ADUP7 - 7,3,4,5,6
+            \item Caminho completo: 2,3,4,5,6,7,3
+        \end{itemize}
+      
     \end{itemize}
     \item \textbf{Casos de teste - Data Flow}
     \begin{table}[H]
@@ -483,7 +521,8 @@ para cada variável).
         source & CT07 &  &    &  \\ \hline
         currentVertex & CT08  & &  &  \\ \hline
         edges & CT09 &  &   & \\ \hline
-        vertices & CT10 &  &  &  \\ 
+        vertices & CT10 &  &  &  \\ \hline
+        i & CT11 &  &  &  \\ 
 
         \hline
     \end{tabular}
@@ -512,6 +551,31 @@ para cada variável).
     \textit{board}.
     \begin{itemize}
         \item \textbf{board}
+        \begin{itemize}
+            \item ADUP1 - 1,2,3,5,7
+            \item ADUP2 - 1,2,3,5,7,9,10,12
+            \item ADUP3 - 12,13
+            \item Caminho completo: 1,2,3,5,7,9,10,12,13
+        \end{itemize}
+        \item \textbf{i}
+        \begin{itemize}
+            \item ADUP1 - 2,3,15
+            \item ADUP2 - 2,3,4
+            \item ADUP3 - 2,3,4,5,7,6
+            \item ADUP4 - 2,3,4,5,16
+            \item ADUP5 - 16,3,4
+            \item ADUP6 - 16,3,15
+            \item Caminho completo: 1,2,3,5,7,9,10,12,13
+        \end{itemize}
+        \item \textbf{j}
+        \begin{itemize}
+            \item ADUP1 - 4,5,16
+            \item ADUP2 - 4,5,7,6
+            \item ADUP3 - 4,5,7,9,8
+            \item ADUP3 - 12,13
+            \item Caminho completo: 1,2,3,5,7,9,10,12,13
+        \end{itemize}
+        \item \textbf{num}
         \begin{itemize}
             \item ADUP1 - 1,2,3,5,7
             \item ADUP2 - 1,2,3,5,7,9,10,12

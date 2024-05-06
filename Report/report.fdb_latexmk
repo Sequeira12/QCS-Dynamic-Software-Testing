@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1714867555.12177 "/Users/brunosequeira/Desktop/QCS/QCS-Dynamic-Software-Testing/Report/report.tex" "report.pdf" "report" 1714867560.76215 0
-  "/Users/brunosequeira/Desktop/QCS/QCS-Dynamic-Software-Testing/Report/report.tex" 1714867552.88395 32599 34313bdba4651fffb71134d1d4b97610 ""
+["pdflatex"] 1715003467.77928 "/Users/brunosequeira/Desktop/QCS/QCS-Dynamic-Software-Testing/Report/report.tex" "report.pdf" "report" 1715003470.56564 0
+  "/Users/brunosequeira/Desktop/QCS/QCS-Dynamic-Software-Testing/Report/report.tex" 1715003465.73736 34313 a2e3618946a1a63ca3086307c0e73ef7 ""
   "/Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map" 1714758997.84137 74160 78b35abd362efd043d49e72b1d59ee69 ""
   "/Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1711627528.09958 11548 727e5e4882ecc0738c062b5aa0bf526b ""
   "/Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1712933432.76934 21059650 be3e3ec3b1571232f12fb2d76ea97c9d ""
@@ -50,8 +50,8 @@
   "Images/DataFlowDijkstra.png" 1714867499.99362 188887 85962914aab200f463524f14d88663a1 ""
   "Images/DataFlowSudoku.drawio.png" 1714759916.20501 127112 0c0a6e972d0c6cf67c284678fd1482d1 ""
   "Images/dei_thumb.png" 1713543410.44421 16892 718660ae15134f76c497df49f7c46672 ""
-  "report.aux" 1714867560.30061 4242 bc3c5e0358bd3ff891d33ff691a77821 "pdflatex"
-  "report.tex" 1714867552.88395 32599 34313bdba4651fffb71134d1d4b97610 ""
+  "report.aux" 1715003470.20405 4242 5cb9fe4dcb96642facd95abc37b65b0a "pdflatex"
+  "report.tex" 1715003465.73736 34313 a2e3618946a1a63ca3086307c0e73ef7 ""
   (generated)
   "report.aux"
   "report.log"
