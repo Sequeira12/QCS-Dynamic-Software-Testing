@@ -17,62 +17,62 @@ public class code {
     }
     public static boolean solve(char[][]board,int level){
         if(level==0) System.out.print("  2");
+        if(level==0) System.out.print("  3");
         for(int i=0;i<9;i++){
+            if(level==0 && i>0) System.out.print("  3");
             
-            if(level==0) System.out.print( "  3");
             if(level==0) System.out.print( "  4");
             if(level==0) System.out.print( "  5");
             for(int j=0;j<9;j++){
-                if(level==0 && j > 0) System.out.print( "  5");
+                if(level==0 && j>0) System.out.print( "  5");
                 if(level==0) System.out.print( "  7");
                 if(board[i][j]=='.'){
                     if(level==0) System.out.print( "  9");
-                    if(level==0) System.out.print( "  11");
+                        
+                    if(level==0) System.out.print( "  10");
                         
                     for(char num='1';num<='9';num++){
+                        if(level==0 && num!='1') System.out.print( "  10");
                         
-                        if(level==0 && num!='1') System.out.print( "  11");
-                        if(level==0) System.out.print( "  14");
+
                         if(isPossible(board,i,j,num)){
-                            
-                           
-                            if(level==0) System.out.print( "  15");
+                            if(level==0) System.out.print( "  12");
                             board[i][j]=num;
                             
-                            if(level==0)  System.out.print( "  16");
-                            if(solve(board,level++)){
-                                
-                                if(level==0)  System.out.print( "  17");
-                                if(level==0)  System.out.print( "  19");
+                            if(level==0) System.out.print( "  13");
+                     
+                            if(solve(board,level+1)){
+                                if(level==0) System.out.print( "  15");
+                     
                                 return true;
                             }
                             //if the solve function return false then the prev num must be in wrong pos so then backtrack
                             //and fill that wibth '.'. 
                             else{
-                                
-                                if(level==0) System.out.print( "  18");
+                                if(level==0) System.out.print( "  14");
+                     
                                 board[i][j]='.';
                             }
                         }
-                        
-                        if(level==0)  System.out.print( "  13");
+                     
+                        if(level==0) System.out.print( "  11");
+                     
                     }
+                    if(level==0) System.out.print( "  8");
 
                     
-                    if(level==0)  System.out.print( "  12");
-                    if(level==0)  System.out.print( "  19");
                     //if it is not possible to select a number from 1 to 9 the solve function return false;
                     return false;
                 }
-                if(level==0) System.out.print( "  10");
-
+                if(level==0) System.out.print( "  6");
+  
             }
-            
-            if(level==0) System.out.print( "  6");
+            if(level==0) System.out.print( "  16");
+
         }
+        if(level==0) System.out.print("  15");
         
-        if(level==0)   System.out.print( "  8");
-        if(level==0)   System.out.print( "  19");
+        
         return true;
     }
 
