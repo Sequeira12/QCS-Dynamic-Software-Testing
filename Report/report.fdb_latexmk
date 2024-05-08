@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1715179658.35301 "/Users/brunosequeira/Desktop/QCS_P2/QCS-Dynamic-Software-Testing/Report/report.tex" "report.pdf" "report" 1715179662.45864 0
-  "/Users/brunosequeira/Desktop/QCS_P2/QCS-Dynamic-Software-Testing/Report/report.tex" 1715179655.59322 53834 fe45054ed102e6de756f0f66ebf2616e ""
+["pdflatex"] 1715185360.42398 "/Users/brunosequeira/Desktop/QCS_P2/QCS-Dynamic-Software-Testing/Report/report.tex" "report.pdf" "report" 1715185365.49357 0
+  "/Users/brunosequeira/Desktop/QCS_P2/QCS-Dynamic-Software-Testing/Report/report.tex" 1715185357.53587 53856 d7e37c9643ea1260f51f6c7c23b67575 ""
   "/Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map" 1715019131.02054 74160 78b35abd362efd043d49e72b1d59ee69 ""
   "/Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1711627528.09958 11548 727e5e4882ecc0738c062b5aa0bf526b ""
   "/Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1712933432.76934 21059650 be3e3ec3b1571232f12fb2d76ea97c9d ""
@@ -53,11 +53,11 @@
   "Images/DataFlowDijkstra.png" 1715008766.46001 188887 85962914aab200f463524f14d88663a1 ""
   "Images/DataFlowSudoku.png" 1715033323.18051 132727 f81562e2f2f5e96edb33817f1d5eea70 ""
   "Images/dei_thumb.png" 1715008766.46244 16892 718660ae15134f76c497df49f7c46672 ""
-  "report.aux" 1715179661.93149 5140 09b09901e0f8c6e7b1ee2343a70df33e "pdflatex"
-  "report.lof" 1715179661.9806 419 e4a2f0237ee072ecf1f64553154d3245 "pdflatex"
-  "report.lot" 1715179661.98069 1146 48f56897155f9612d926f36cca58c88b "pdflatex"
-  "report.tex" 1715179655.59322 53834 fe45054ed102e6de756f0f66ebf2616e ""
-  "report.toc" 1715179661.98048 1552 32076e87883adeef7bb6db6093f79878 "pdflatex"
+  "report.aux" 1715185364.56832 5140 09b09901e0f8c6e7b1ee2343a70df33e "pdflatex"
+  "report.lof" 1715185364.57408 419 e4a2f0237ee072ecf1f64553154d3245 "pdflatex"
+  "report.lot" 1715185364.57418 1146 48f56897155f9612d926f36cca58c88b "pdflatex"
+  "report.tex" 1715185357.53587 53856 d7e37c9643ea1260f51f6c7c23b67575 ""
+  "report.toc" 1715185364.57396 1552 32076e87883adeef7bb6db6093f79878 "pdflatex"
   (generated)
   "report.aux"
   "report.lof"
