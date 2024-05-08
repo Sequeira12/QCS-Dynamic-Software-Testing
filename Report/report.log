@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.4.12)  6 MAY 2024 14:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.4.12)  8 MAY 2024 15:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/brunosequeira/Desktop/QCS/QCS-Dynamic-Software-Testing/Report/report.tex
-(/Users/brunosequeira/Desktop/QCS/QCS-Dynamic-Software-Testing/Report/report.tex
+**/Users/brunosequeira/Desktop/QCS_P2/QCS-Dynamic-Software-Testing/Report/report.tex
+(/Users/brunosequeira/Desktop/QCS_P2/QCS-Dynamic-Software-Testing/Report/report.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
 (/Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
@@ -247,23 +247,26 @@ LaTeX Warning: Label `tab:tabela_exemplo' multiply defined.
 
 LaTeX Warning: Label `tab:tabela_exemplo' multiply defined.
 
+
+LaTeX Warning: Label `tab:tabela_exemplo' multiply defined.
+
 )
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
  (/Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count298
@@ -326,170 +329,367 @@ Package: xparse 2024-03-14 L3 Experimental document command parser
 <Images/dei_thumb.png, id=1, 240.9pt x 39.5076pt>
 File: Images/dei_thumb.png Graphic file (type png)
 <use Images/dei_thumb.png>
-Package pdftex.def Info: Images/dei_thumb.png  used on input line 16.
+Package pdftex.def Info: Images/dei_thumb.png  used on input line 17.
 (pdftex.def)             Requested size: 171.99922pt x 28.20853pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 29.
+(Font)              <7> on input line 30.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 29.
+(Font)              <5> on input line 30.
  [1
 
-{/Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map} <./Images/dei_thumb.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+{/Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map} <./Images/dei_thumb.png>] (report.toc)
+\tf@toc=\write3
+\openout3 = `report.toc'.
 
- []
+ [1
 
-[1
+] (report.lof)
+\tf@lof=\write4
+\openout4 = `report.lof'.
+
+ (report.lot)
+\tf@lot=\write5
+\openout5 = `report.lot'.
+
+ [2
 
 ]
-Overfull \hbox (7.34795pt too wide) in paragraph at lines 92--93
-[]\OT1/cmr/m/n/10 Para realiza^^Xc~ao deste m^^Setodo, iremos apresentar passo a passo, a implementa^^Xc~ao deste. Projetando
- []
-
-[2]
-<Images/ControlFlowGraphDijkstra.png, id=19, 1142.2675pt x 1145.27875pt>
-File: Images/ControlFlowGraphDijkstra.png Graphic file (type png)
-<use Images/ControlFlowGraphDijkstra.png>
-Package pdftex.def Info: Images/ControlFlowGraphDijkstra.png  used on input line 103.
-(pdftex.def)             Requested size: 430.00462pt x 431.13866pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--113
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 [3
 
- <./Images/ControlFlowGraphDijkstra.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+]
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--151
-
+Overfull \hbox (4.74611pt too wide) in paragraph at lines 107--108
+[]\OT1/cmr/m/n/10 Funcionalidade b^^Sasica: Testes para garantir que o algoritmo funcione corretamente em situa^^Xc~oes
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
-[]|\OT1/cmr/bx/n/10 Output
  []
 
 [5]
-<Images/ControlFlowSudoku.png, id=30, 1071.00125pt x 904.37875pt>
-File: Images/ControlFlowSudoku.png Graphic file (type png)
-<use Images/ControlFlowSudoku.png>
-Package pdftex.def Info: Images/ControlFlowSudoku.png  used on input line 217.
-(pdftex.def)             Requested size: 430.00462pt x 363.11127pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 214--220
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--225
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
-
+Overfull \hbox (12.34795pt too wide) in paragraph at lines 150--151
+[]\OT1/cmr/m/n/10 Para realiza^^Xc~ao deste m^^Setodo, iremos apresentar passo a passo, a implementa^^Xc~ao deste. Projetando
  []
 
 [6
 
- <./Images/ControlFlowSudoku.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+]
+<Images/ControlFlowGraphDijkstra.png, id=32, 1142.2675pt x 1145.27875pt>
+File: Images/ControlFlowGraphDijkstra.png Graphic file (type png)
+<use Images/ControlFlowGraphDijkstra.png>
+Package pdftex.def Info: Images/ControlFlowGraphDijkstra.png  used on input line 161.
+(pdftex.def)             Requested size: 430.00462pt x 431.13866pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+[7
+
+ <./Images/ControlFlowGraphDijkstra.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--209
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
 []|\OT1/cmr/bx/n/10 Output
  []
 
-[7]
+[9]
+<Images/ControlFlowSudoku.png, id=43, 1071.00125pt x 904.37875pt>
+File: Images/ControlFlowSudoku.png Graphic file (type png)
+<use Images/ControlFlowSudoku.png>
+Package pdftex.def Info: Images/ControlFlowSudoku.png  used on input line 275.
+(pdftex.def)             Requested size: 430.00462pt x 363.11127pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--278
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--283
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+
+ []
+
+[10
+
+ <./Images/ControlFlowSudoku.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
+[]|\OT1/cmr/bx/n/10 Output
+ []
+
+[11]
 Overfull \vbox (30.21228pt too high) has occurred while \output is active []
 
- [8]
-Underfull \hbox (badness 10000) in paragraph at lines 375--379
+ [12]
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
 
  []
 
-<Images/DataFlowDijkstra.png, id=42, 917.4275pt x 1125.20375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 443--445
+
+ []
+
+<Images/DataFlowDijkstra.png, id=55, 917.4275pt x 1125.20375pt>
 File: Images/DataFlowDijkstra.png Graphic file (type png)
 <use Images/DataFlowDijkstra.png>
-Package pdftex.def Info: Images/DataFlowDijkstra.png  used on input line 398.
+Package pdftex.def Info: Images/DataFlowDijkstra.png  used on input line 458.
 (pdftex.def)             Requested size: 430.00462pt x 527.38646pt.
-[9]
-Overfull \hbox (2.21834pt too wide) in paragraph at lines 404--409
-\OT1/cmr/m/n/10 Para cada vari^^Savel, iremos identificar caminhos no gr^^Safico de fluxo de dados que satisfa^^Xcam
- []
-
-[10 <./Images/DataFlowDijkstra.png>] [11]
-<Images/DataFlowSudoku.drawio.png, id=53, 1045.9075pt x 1177.39874pt>
-File: Images/DataFlowSudoku.drawio.png Graphic file (type png)
-<use Images/DataFlowSudoku.drawio.png>
-Package pdftex.def Info: Images/DataFlowSudoku.drawio.png  used on input line 526.
-(pdftex.def)             Requested size: 430.00462pt x 484.06607pt.
- [12]
-Underfull \hbox (badness 10000) in paragraph at lines 531--532
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
 
  []
 
-[13 <./Images/DataFlowSudoku.drawio.png>]
-Overfull \hbox (2.21834pt too wide) in paragraph at lines 533--537
+[14 <./Images/DataFlowDijkstra.png>]
+Overfull \hbox (2.21834pt too wide) in paragraph at lines 465--470
 []\OT1/cmr/m/n/10 Para cada vari^^Savel, iremos identificar caminhos no gr^^Safico de fluxo de dados que satisfa^^Xcam
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 606--607
-
- []
-
-
-Overfull \hbox (19.01367pt too wide) in paragraph at lines 615--650
- [][] 
- []
-
-
-Overfull \hbox (19.01367pt too wide) in paragraph at lines 663--768
- [][] 
- []
-
 [15]
-Overfull \vbox (75.81241pt too high) has occurred while \output is active []
+Overfull \hbox (3.35706pt too wide) in paragraph at lines 571--572
+[]\OT1/cmr/m/n/10 Iremos apresentar de seguida os casos de teste para os caminhos completos acima descritos. 
+ []
 
- [16] [17] (report.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 571--572
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--575
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 579--580
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 581--589
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 590--593
+
+ []
+
+[17]
+<Images/DataFlowSudoku.png, id=72, 1044.90375pt x 1177.39874pt>
+File: Images/DataFlowSudoku.png Graphic file (type png)
+<use Images/DataFlowSudoku.png>
+Package pdftex.def Info: Images/DataFlowSudoku.png  used on input line 627.
+(pdftex.def)             Requested size: 430.00462pt x 484.53317pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 632--633
+
+ []
+
+[18
+
+ <./Images/DataFlowSudoku.png>]
+Overfull \hbox (2.21834pt too wide) in paragraph at lines 634--639
+[]\OT1/cmr/m/n/10 Para cada vari^^Savel, iremos identificar caminhos no gr^^Safico de fluxo de dados que satisfa^^Xcam
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 650--653
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--676
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 689--692
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 703--706
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 708--709
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 710--711
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 715--716
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 717--726
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 717--726
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 727--737
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 727--737
+
+ []
+
+[21]
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 798.
+ (/Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 798.
+
+Underfull \hbox (badness 10000) in paragraph at lines 798--799
+
+ []
+
+
+Overfull \hbox (55.30211pt too wide) in paragraph at lines 800--801
+[]\OT1/cmr/m/n/10 /openjdk-21.0.2/Contents/Home/bin/java Code.Dijkstra \OML/cmm/m/it/10 > \OT1/cmr/m/n/10 Outputs/ControlFlow/Output/Dijkstra/P5.txt 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--801
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 806--807
+
+ []
+
+[22]
+Overfull \hbox (19.01367pt too wide) in paragraph at lines 818--853
+ [][] 
+ []
+
+
+Overfull \hbox (19.01367pt too wide) in paragraph at lines 866--971
+ [][] 
+ []
+
+[23
+
+]
+Overfull \vbox (32.61197pt too high) has occurred while \output is active []
+
+ [24]
+Overfull \hbox (19.01367pt too wide) in paragraph at lines 981--1079
+ [][] 
+ []
+
+
+Overfull \vbox (16.80457pt too high) has occurred while \output is active []
+
+ [25]
+Overfull \hbox (19.01367pt too wide) in paragraph at lines 1091--1169
+ [][] 
+ []
+
+
+Overfull \hbox (19.01367pt too wide) in paragraph at lines 1177--1254
+ [][] 
+ []
+
+[26] [27] [28] (report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -500,17 +700,17 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6330 strings out of 476358
- 123549 string characters out of 5790756
- 1946493 words of memory out of 5000000
- 28410 multiletter control sequences out of 15000+600000
- 560874 words of font info for 45 fonts, out of 8000000 for 9000
+ 6373 strings out of 476358
+ 124427 string characters out of 5790756
+ 1948493 words of memory out of 5000000
+ 28440 multiletter control sequences out of 15000+600000
+ 561042 words of font info for 46 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 65i,13n,79p,618b,411s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (18 pages, 385231 bytes).
+ 65i,13n,79p,649b,409s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/brunosequeira/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on report.pdf (29 pages, 412819 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
+ 137 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
